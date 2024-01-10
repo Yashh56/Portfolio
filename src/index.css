@@ -1,0 +1,60 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  /* color:black; */
+  /* font-family: 'Poppins'; */
+  font-family: 'Raleway',serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(53, 31, 150); */
+  /* background: linear-gradient(90deg, rgba(53, 31, 150, 1) 0%, rgba(162, 0, 255, 1) 50%, rgba(111, 0, 255, 1) 61%); */
+}
+
+i {
+  color: #fff;
+  font-size: 1.5rem;
+  /* margin: 0.5rem; */
+  /* gap: 1rem; */
+}
+#i {
+  /* color: #fff; */
+  font-size: 3.0rem;
+  margin: 0.5rem;
+  gap: 1rem;
+}
+
+/* AnimatedSection.css */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid white;  /* creates padding around scroll thumb */
+}
