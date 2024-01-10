@@ -20,7 +20,7 @@ const Footer = () => {
 
                 <div className='mt-2 flex justify-evenly'>
                     <Link1 target='_blank' to='https://github.com/Yashh56'>
-                        <i class="devicon-github-original"></i>
+                        <i className="devicon-github-original"></i>
                     </Link1>
                     <Link1 target='_blank' to='https://www.linkedin.com/in/yash596/'>
                         <i className="devicon-linkedin-plain colored"></i>
