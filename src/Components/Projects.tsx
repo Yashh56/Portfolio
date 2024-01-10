@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react'
 
 const Projects = () => {
 
