@@ -48,7 +48,7 @@ const About = () => {
                         <p className='animate-fade-right animate-once max-md:min-w-fit sm:min-w-fit text-white text-center mt-2 text-1xl'>I am actively searching for a full-time position or internship that aligns with my skills and career goals, where I can contribute effectively and continue to develop my expertise. </p>
                     </div>
                 </div>
-                <div className='mt-4'>
+                {/* <div className='mt-4'>
                     <h1 className='text-4xl text-center  text-white max-md:text-2xl '>Tech Stack I am Familar With :</h1>
                     <div className='flex max-md:flex justify-center items-center mt-2 gap-2'>
                         <div className='flex max-md:flex-col sm:flex-col'>
@@ -74,7 +74,7 @@ const About = () => {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

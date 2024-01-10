@@ -13,7 +13,7 @@ const Home = () => {
   })
 
   return (
-    <div id='home' className='flex sm:flex-row max-md:min-w-fit sm:min-w-fit w-full h-[90vh] justify-center items-center'>
+    <div id='home' className='flex sm:flex-row max-md:min-w-fit sm:min-w-fit w-full h-[100vh] justify-center items-center'>
       <div className='max-md:flex-col flex justify-center text-center items-center w-fit'>
         <div className='md:hidden  m-2 animate-bounce'>
           <Image mt={4} bg={'transparent'} borderRadius='full' boxSize='120px' src="1.jpg" />
