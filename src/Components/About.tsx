@@ -29,16 +29,16 @@ const About = () => {
     }, []);
 
     return (
-        <div id="animatedSection" className="h-[80vh] max-md:ml-0 max-md:min-w-fit max-md:h[40vh] sm:min-w-fit justify-center items-center">
+        <div id="animatedSection" className="h-[80vh] bg-transparent max-md:ml-0 max-md:min-w-full max-md:h[40vh] sm:min-w-full justify-center items-center">
             <div id="animatedSection" className={`section ${isVisible ? 'animate' : ''}`}>
                 {/* <div> */}
                 <div className="flex justify-center items-center">
                     <h1 className='text-4xl text-center  text-white'>ABOUT ME</h1>
                 </div>
                 <div className="max-md:flex-row flex-row max-md:min-w-fit sm:min-w-fit  md:flex justify-center items-center">
-                    <Avatar className='ml-24 max-md:justify-center max-md:ml-40 items-center justify-center ' size='2xl' name='Segun Adebayo' src='12.jpg' />{' '}
+                    <Avatar className='ml-24 items-center justify-center ' size='2xl' name='Segun Adebayo' src='12.jpg' />{' '}
 
-                    <div className=" max-md:flex-row ml-2 md:w-[60vh] max-md:min-w-min sm:w-full text-center mt-6">
+                    <div className=" max-md:flex-row ml-2 md:w-[60vh] max-md:min-w-full sm:w-full text-center mt-6">
                         {/* <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."></div> */}
                         {/* <p className='animate-fade-right max-md:min-w-fit sm:min-w-fit animate-once text-white text-center mt-2 text-1xl'>an 18-year old who is interested in Web Development</p> */}
                         <p className='animate-fade-right max-md:min-w-fit sm:min-w-fit animate-once text-white text-center mt-2 text-1xl'>Hello, I'm Yash, a first-year undergraduate student pursuing a Bachelor's in Computer Science. I'm passionate about exploring various facets of the field, including web development, competitive programming, and other related areas.</p>
