@@ -90,7 +90,7 @@ const Projects = () => {
                 </ButtonGroup>
               </CardFooter>
             </Card>
-            <Card color={'white'} bg={'#202753'} className='hover:scale-105 md:ml-12 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
+            <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
               <CardBody>
                 <Image
                   src='SM.jpeg'
