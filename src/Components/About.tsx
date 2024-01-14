@@ -36,7 +36,7 @@ const About = () => {
                     <h1 className='text-4xl text-center  text-white'>ABOUT ME</h1>
                 </div>
                 <div className="max-md:flex-row flex-row max-md:min-w-fit sm:min-w-fit  md:flex justify-center items-center">
-                    <Avatar className='ml-24 items-center justify-center ' size='2xl' name='Segun Adebayo' src='12.jpg' />{' '}
+                    <Avatar className='ml-24 max-md:justify-center max-md:ml-40 items-center justify-center ' size='2xl' name='Segun Adebayo' src='12.jpg' />{' '}
 
                     <div className=" max-md:flex-row ml-2 md:w-[60vh] max-md:min-w-min sm:w-full text-center mt-6">
                         {/* <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."></div> */}

@@ -28,7 +28,7 @@ const Skills = () => {
     }, []);
     return (
         <div>
-            <div className='mt-8'>
+            <div className='mt-8 bg-transparent'>
                 <div id="animatedSection1" className={`section ${isVisible ? 'animate' : ''}`}>
                     <h1 className='text-4xl text-center  text-white max-md:text-2xl '>SKILLS</h1>
                     <div className='flex max-md:flex justify-center items-center mt-2 gap-2'>

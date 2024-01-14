@@ -34,7 +34,7 @@ const Projects = () => {
       <div id="animatedSection2" className={`section ${isVisible ? 'animate' : ''}`}>
         <h1 className='text-4xl max-md:mt-5 text-center md:mt-16 text-white'>PROJECTS</h1>
         {/* // <div className="md:h-full text-center  max-md:justify-center max-md:items-center max-md:m-16 max-md:ml-8 md:w-[200vh] max-md:w-fit sm:w-fit mt-12 justify-center items-center"> */}
-        <div className=' max-md:mt-3 flex max-md:flex-col flex-wrap md:mt-12 justify-center items-center text-center'>
+        <div className=' max-md:mt-3 bg-transparent flex max-md:flex-col flex-wrap md:mt-12 justify-center items-center text-center'>
           {/* <div className='mt-4 max-md:flex-col md:flex-wrap max-md:justify-evenly justify-center items-center flex  m-6 p-2'> */}
           <div className='md:flex md:flex-wrap justify-center items-center md:gap-10 '>
             <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>

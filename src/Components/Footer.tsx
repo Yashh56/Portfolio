@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 const Footer = () => {
     return (
-        <div className="flex max-md:w-full sm:min-w-fit justify-center items-center  h-[40vh]">
+        <div className="flex max-md:w-full bg-transparent sm:min-w-fit justify-center items-center  h-[40vh]">
             <div>
                 <div className='flex items-center justify-center text-2xl '>
                     <h2 className='text-center animate-fade-up'>
