@@ -33,9 +33,7 @@ const Projects = () => {
     <div id='animatedSection2' className='h-full'>
       <div id="animatedSection2" className={`section ${isVisible ? 'animate' : ''}`}>
         <h1 className='text-4xl max-md:mt-5 text-center md:mt-16 text-white'>PROJECTS</h1>
-        {/* // <div className="md:h-full text-center  max-md:justify-center max-md:items-center max-md:m-16 max-md:ml-8 md:w-[200vh] max-md:w-fit sm:w-fit mt-12 justify-center items-center"> */}
         <div className=' max-md:mt-3 bg-transparent flex max-md:flex-col flex-wrap md:mt-12 justify-center items-center text-center'>
-          {/* <div className='mt-4 max-md:flex-col md:flex-wrap max-md:justify-evenly justify-center items-center flex  m-6 p-2'> */}
           <div className='md:flex md:flex-wrap justify-center items-center md:gap-10 '>
             <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
               <CardBody>
@@ -152,42 +150,7 @@ const Projects = () => {
                 </ButtonGroup>
               </CardFooter>
             </Card>
-
           </div>
-          {/* <div className='mt-4 max-md:flex-col max-md:justify-evenly justify-center items-center flex  m-6 p-2'>
-
-          <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[30vh] size-max md:ml-12' maxW='sm'>
-            <CardBody>
-              <Image
-                src='CryptoVerse.jpeg'
-                alt='Green double couch with wooden legs'
-                borderRadius='lg'
-              />
-              <Stack mt='6' spacing='3'>
-                <Heading size='md'>CryptoVerse</Heading>
-                <Text>
-                  A website where you can get information about different cryptocurrencies.
-                  React.js is used for frontend and Chart js is used for displaying the data in graphical form and axios is used for fetching data from API Context API is used for state management.
-                </Text>
-              </Stack>
-            </CardBody>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing='2'>
-                <Link target='_blank' to='https://github.com/Yashh56/CryptoVerse'>
-                  <Button variant='solid' colorScheme='blue' gap={3}>
-                    Source Code   <i className="devicon-github-original colored"></i>
-                  </Button>
-                </Link>
-                <Button variant='ghost' colorScheme='blue'>
-                  <Link target='_blank' to='https://crypto-verse-wine.vercel.app/'>
-                    Demo
-                  </Link>
-                </Button>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-        </div> */}
         </div>
       </div>
     </div>
