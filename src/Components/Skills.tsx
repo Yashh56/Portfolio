@@ -30,7 +30,7 @@ const Skills = () => {
         <div>
             <div className='mt-8 bg-transparent'>
                 <div id="animatedSection1" className={`section ${isVisible ? 'animate' : ''}`}>
-                    <h1 className='text-4xl text-center  text-white max-md:text-2xl '>SKILLS</h1>
+                    <h1 className='text-4xl text-center  dark:text-white max-md:text-2xl '>SKILLS</h1>
                     <div className='flex max-md:flex justify-center items-center mt-2 gap-2'>
                         <div className='flex max-md:flex-col sm:flex-col'>
                             <i id='i' className="devicon-javascript-plain colored"></i>
