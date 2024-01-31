@@ -32,10 +32,10 @@ const About = () => {
         <div id="animatedSection" className="h-[70vh]  max-md:ml-0 max-md:min-w-fit sm:min-w-fit justify-center items-center">
             <div id="animatedSection" className={`section ${isVisible ? 'animate' : ''}`}>
                 <div className="flex justify-center items-center">
-                    <h1 className='md:text-6xl max-md:text-2xl text-center  dark:text-white'>ABOUT ME</h1>
+                    <h1 className='md:text-6xl/10 max-md:text-6xl/10 m-6 text-center  dark:text-white'>ABOUT ME</h1>
                 </div>
                 <div className="max-md:flex-row flex-row max-md:min-w-fit sm:min-w-fit  md:flex justify-center items-center">
-                    <Avatar className='ml-24 items-center justify-center ' size='2xl' name='Segun Adebayo' src='12.jpg' />{' '}
+                    <Avatar className='ml-28 items-center justify-center ' size='2xl' content='center' name='Segun Adebayo' src='12.jpg' />{' '}
 
                     <div className=" max-md:flex-row ml-2 md:text-xl md:w-[100vh] max-md:min-w-min sm:w-full text-center mt-6">
                         <p className='animate-fade-right max-md:min-w-fit sm:min-w-fit animate-once  text-center mt-2 text-1xl'>Hello, I'm Yash, a first-year undergraduate student pursuing a Bachelor's in Computer Science. I'm passionate about exploring various facets of the field, including web development, competitive programming, and other related areas.</p>

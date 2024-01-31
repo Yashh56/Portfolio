@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+// import { Progress } from '@chakra-ui/react'
 const Skills = () => {
 
     const [isVisible, setIsVisible] = useState(false);
@@ -27,8 +28,8 @@ const Skills = () => {
         };
     }, []);
     return (
-        <div>
-            <div className='mt-8 bg-transparent'>
+        <div className=' flex justify-center items-center' id='animatedSection1'>
+            {/* <div className='mt-8 bg-transparent'>
                 <div id="animatedSection1" className={`section ${isVisible ? 'animate' : ''}`}>
                     <h1 className='text-4xl text-center  dark:text-white max-md:text-2xl '>SKILLS</h1>
                     <div className='flex max-md:flex justify-center items-center mt-2 gap-2'>
@@ -56,7 +57,71 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div className='h-fit md:w-[100vh] max-md:w-fit'>
+                <div className={`section ${isVisible ? 'animate' : ''}`}>
+                    <h1 className='text-6xl/10 text-center m-10'>My Skills</h1>
+                    {/* <div className='flex gap-5 justify-center items-center'>
+                        <p className='text-center float-left text-2xl mt-6'>
+                            Web Development
+
+                        </p>
+                        <div className='flex justify-center items-center mt-5'>
+                            <Progress value={80} w={250} />
+                        </div>
+                    </div> */}
+                    {/* <h1 className='text-3xl text-center mt-6'>Tech  I'm Familar with :</h1> */}
+                    <div className=' flex mt-8 flex-wrap text-2xl gap-10 justify-center items-center'>
+                        <div className='flex gap-2'>
+                            <i className="devicon-javascript-plain colored"></i>
+                            <p>Javascript</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-typescript-plain colored"></i>
+                            <p>Typescript</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-react-original colored"></i>
+                            <p>React</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-tailwindcss-plain colored"></i>
+                            <p>Tailwind</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-redux-original colored"></i>
+                            <p>Redux</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-nodejs-plain colored"></i>
+                            <p>Node</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-express-original colored"></i>
+                            <p>Express</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-mongodb-plain colored"></i>
+                            <p>MongoDB</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-git-plain colored"></i>
+                            <p>Git</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-python-plain colored"></i>
+                            <p>Python</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <i className="devicon-java-plain colored"></i>
+                            <p>Java</p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
         </div>
     )
 }

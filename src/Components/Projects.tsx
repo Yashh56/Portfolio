@@ -32,11 +32,11 @@ const Projects = () => {
   return (
     <div id='animatedSection2' className='h-full'>
       <div id="animatedSection2" className={`section ${isVisible ? 'animate' : ''}`}>
-        <h1 className='text-4xl max-md:mt-5 text-center md:mt-16 dark:text-white'>PROJECTS</h1>
+        <h1 className='text-4xl max-md:mt-10 text-center md:mt-16 dark:text-white'>PROJECTS</h1>
         <div className=' max-md:mt-3 bg-transparent flex max-md:flex-col flex-wrap md:mt-12 justify-center items-center text-center'>
           <div className='md:flex md:flex-wrap justify-center items-center md:gap-10 '>
-            <Card color={'white'} className='bg-black dark:bg-[#202753] hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-black dark:bg-[#202753]'>
+            <Card color={'white'} className='bg-[#202753] dark:bg-[#202753] hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
+              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
                 <Image
                   src='Blog-App.jpeg'
                   alt='Green double couch with wooden legs'
@@ -51,7 +51,7 @@ const Projects = () => {
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter className='bg-black dark:bg-[#202753]'>
+              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
                 <ButtonGroup spacing='2'>
                   <Link target='_blank' to='https://github.com/Yashh56/Blog-App'>
                     <Button variant='solid' gap={3} colorScheme='blue'>
@@ -61,8 +61,8 @@ const Projects = () => {
                 </ButtonGroup>
               </CardFooter>
             </Card>
-            <Card color={'white'}  className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-black dark:bg-[#202753]'>
+            <Card color={'white'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
+              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
                 <Image
                   src='Fun-Fact.jpeg'
                   alt='Green double couch with wooden legs'
@@ -78,7 +78,7 @@ const Projects = () => {
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter className='bg-black dark:bg-[#202753]'>
+              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
                 <ButtonGroup spacing='2' gap={4}>
                   <Link target='_blank' to='https://github.com/Yashh56/Fun-Fact-Generator'>
                     <Button variant='solid' gap={3} colorScheme='blue'>
@@ -89,7 +89,7 @@ const Projects = () => {
               </CardFooter>
             </Card>
             <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-black dark:bg-[#202753]'>
+              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
                 <Image
                   src='SM.jpeg'
                   alt='Green double couch with wooden legs'
@@ -104,7 +104,7 @@ const Projects = () => {
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter className='bg-black dark:bg-[#202753]'>
+              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
                 <ButtonGroup spacing='2'>
                   <Link target='_blank' to='https://github.com/Yashh56/E-Commerce-Site'>
                     <Button variant='solid' colorScheme='blue' gap={3}>
@@ -120,7 +120,7 @@ const Projects = () => {
               </CardFooter>
             </Card>
             <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max ' maxW='sm'>
-              <CardBody className='bg-black dark:bg-[#202753]'>
+              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
                 <Image
                   src='CryptoVerse.jpeg'
                   alt='Green double couch with wooden legs'
@@ -135,7 +135,7 @@ const Projects = () => {
                 </Stack>
               </CardBody>
               <Divider />
-              <CardFooter className='bg-black dark:bg-[#202753]'>
+              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
                 <ButtonGroup spacing='2'>
                   <Link target='_blank' to='https://github.com/Yashh56/CryptoVerse'>
                     <Button variant='solid' colorScheme='blue' gap={3}>

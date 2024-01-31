@@ -20,13 +20,13 @@ const Footer = () => {
 
                 <div className='mt-2 dark:text-white flex justify-evenly'>
                     <Link1 target='_blank' to='https://github.com/Yashh56'>
-                        <i className='dark:text-white text-black'><FaGithubSquare/></i>
+                        <i className='dark:text-white text-white'><FaGithubSquare/></i>
                     </Link1>
                     <Link1 target='_blank' to='https://www.linkedin.com/in/yash596/'>
                         <i className=" devicon-linkedin-plain colored"></i>
                     </Link1>
                     <Link1 target='_blank' to='https://twitter.com/Yashh596'>
-                        <i className='dark:text-white text-black'><FaSquareXTwitter /></i>
+                        <i className='dark:text-white text-white'><FaSquareXTwitter /></i>
                     </Link1>
                 </div>
             </div>
