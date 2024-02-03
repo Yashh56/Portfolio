@@ -1,155 +1,85 @@
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, Stack, Text } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-
+import { Button } from '@chakra-ui/react'
+import { Link } from "react-router-dom"
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
 const Projects = () => {
-
-  const [isVisible, setIsVisible] = useState(false);
-
+  const ref = useRef<HTMLInputElement>(null);
   useEffect(() => {
-    const handleScroll = () => {
-      // Set isVisible to true if the section is in the viewport
-      setIsVisible(isElementInViewport());
-    };
-
-    const isElementInViewport = () => {
-      const element = document.getElementById('animatedSection1');
-      if (!element) return false;
-
-      const rect = element.getBoundingClientRect();
-      return rect.top <= 0 && rect.bottom <= window.innerHeight;
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Initial check on component mount
-    handleScroll();
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    const el = ref.current;
+    gsap.fromTo(el, { scale: 0 }, {
+      scale: 1,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: el,
+        toggleActions: 'play none'
+      }
+    })
+  }, [])
   return (
-    <div id='animatedSection2' className='h-full'>
-      <div id="animatedSection2" className={`section ${isVisible ? 'animate' : ''}`}>
-        <h1 className='text-4xl max-md:mt-10 text-center md:mt-16 dark:text-white'>PROJECTS</h1>
-        <div className=' max-md:mt-3 bg-transparent flex max-md:flex-col flex-wrap md:mt-12 justify-center items-center text-center'>
-          <div className='md:flex md:flex-wrap justify-center items-center md:gap-10 '>
-            <Card color={'white'} className='bg-[#202753] dark:bg-[#202753] hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
-                <Image
-                  src='Blog-App.jpeg'
-                  alt='Green double couch with wooden legs'
-                  borderRadius='lg'
-                />
-                <Stack mt='6' spacing='3'>
-                  <Heading size='md'>Blog App</Heading>
-                  <Text>
-                    An Blog Website where user can perform CRUD operations on blogs and can also comment on them.JWT,bcrypt,express-session are used for authentication and authorization.
-                    Backend is made using Express.js and frontend is made using React.js and for data storage MongoDB is used.
-                  </Text>
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
-                <ButtonGroup spacing='2'>
-                  <Link target='_blank' to='https://github.com/Yashh56/Blog-App'>
-                    <Button variant='solid' gap={3} colorScheme='blue'>
-                      Source Code <i className="devicon-github-original colored"></i>
-                    </Button>
-                  </Link>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-            <Card color={'white'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
-                <Image
-                  src='Fun-Fact.jpeg'
-                  alt='Green double couch with wooden legs'
-                  borderRadius='lg'
-                />
-                <Stack mt='6' spacing='3'>
-                  <Heading size='md'>Fun Fact Generator</Heading>
-                  <Text>
-                    A website where you can get random facts about different topics.
-                    Fun Fact Generator Web App in Python using the PyWebio module.
-                    Essentially, it will create interesting facts at random and display them on the web interface.
-                  </Text>
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
-                <ButtonGroup spacing='2' gap={4}>
-                  <Link target='_blank' to='https://github.com/Yashh56/Fun-Fact-Generator'>
-                    <Button variant='solid' gap={3} colorScheme='blue'>
-                      Source Code  <i className="devicon-github-original colored"></i>
-                    </Button>
-                  </Link>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-            <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max' maxW='sm'>
-              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
-                <Image
-                  src='SM.jpeg'
-                  alt='Green double couch with wooden legs'
-                  borderRadius='lg'
-                />
-                <Stack mt='6' spacing='3'>
-                  <Heading size='md'>E-Commerce Website</Heading>
-                  <Text>
-                    An E-Commerce Website where user can buy products and can also add them to cart.
-                    Context API is used for state management. User can add products to cart and can also remove them from cart.
-                  </Text>
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
-                <ButtonGroup spacing='2'>
-                  <Link target='_blank' to='https://github.com/Yashh56/E-Commerce-Site'>
-                    <Button variant='solid' colorScheme='blue' gap={3}>
-                      Source Code   <i className="devicon-github-original colored"></i>
-                    </Button>
-                  </Link>
-                  <Button variant='ghost' colorScheme='blue'>
-                    <Link target='_blank' to='https://e-commerce-site-tawny-six.vercel.app/'>
-                      Demo
-                    </Link>
-                  </Button>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
-            <Card color={'white'} bg={'#202753'} className='hover:scale-105 transition-all duration-500 cursor-pointer max-md:mt-4 max-md:w-[40vh] size-max ' maxW='sm'>
-              <CardBody className='bg-[#202753] dark:bg-[#202753]'>
-                <Image
-                  src='CryptoVerse.jpeg'
-                  alt='Green double couch with wooden legs'
-                  borderRadius='lg'
-                />
-                <Stack mt='6' spacing='3'>
-                  <Heading size='md'>CryptoVerse</Heading>
-                  <Text>
-                    A website where you can get information about different cryptocurrencies.
-                    React.js is used for frontend and Chart js is used for displaying the data in graphical form and axios is used for fetching data from API Context API is used for state management.
-                  </Text>
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter className='bg-[#202753] dark:bg-[#202753]'>
-                <ButtonGroup spacing='2'>
-                  <Link target='_blank' to='https://github.com/Yashh56/CryptoVerse'>
-                    <Button variant='solid' colorScheme='blue' gap={3}>
-                      Source Code   <i className="devicon-github-original colored"></i>
-                    </Button>
-                  </Link>
-                  <Button variant='ghost' colorScheme='blue'>
-                    <Link target='_blank' to='https://crypto-verse-wine.vercel.app/'>
-                      Demo
-                    </Link>
-                  </Button>
-                </ButtonGroup>
-              </CardFooter>
-            </Card>
+    <div ref={ref} className='w-fit mt-1'>
+      <div className='h-[20vh] flex justify-center max-md:mt-12 items-center max-md:text-4xl md:text-6xl'>
+        <h1>PROJECTS</h1>
+      </div>
+      <div className='w-fit flex items-center justify-start max-md:justify-center'>
+        <div className="md:flex">
+          <img src="Blog-App.jpeg" className="max-md:w-[100vh] rounded-lg p-2 object-cover h-2/3 w-2/5 ..." />
+          <div className='flex-col ml-8'>
+            <h1 className="max-md:text-3xl mt-3 md:text-4xl max-md:text-center">Blog App</h1>
+            <p className="max-md:text-xl mt-3 md:text-xl">An Blog Website where user can perform CRUD operations on blogs and can also comment on them.JWT,bcrypt,express-session are used for authentication and authorization.
+              Backend is made using Express.js and frontend is made using React.js and for data storage MongoDB is used.</p>
+            <div className="mt-4">
+              <Link to='https://github.com/Yashh56/Blog-App'>
+                <Button gap={2}>Source Code <i className="devicon-github-original colored"></i></Button>
+              </Link>
+            </div>
+            <div className="mt-4 gap-2">
+              <i className="devicon-react-original colored"></i>
+              <i className="devicon-tailwindcss-plain colored"></i>
+              <i className="devicon-nodejs-plain colored"></i>
+              <i className="devicon-express-original colored"></i>
+              <i className="devicon-mongodb-plain colored"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='mt-12 w-fit flex items-center justify-start max-md:justify-center'>
+        <div className="md:flex">
+          <img src="Fun-Fact.jpeg" className="max-md:w-[100vh] rounded-lg p-2 object-cover h-2/3 w-2/5 ..." />
+          <div className='flex-col ml-8'>
+            <h1 className="max-md:text-3xl mt-3 md:text-4xl max-md:text-center">Fun Fact Generator</h1>
+            <p className="max-md:text-xl mt-3 md:text-xl">A website where you can get random facts about different topics. Fun Fact Generator Web App in Python using the PyWebio module. Essentially, it will create interesting facts at random and display them on the web interface.
+            </p>
+            <div className="mt-4">
+              <Link to='https://github.com/Yashh56/Fun-Fact-Generator'>
+                <Button gap={2}>Source Code <i className="devicon-github-original colored"></i></Button>
+              </Link>
+            </div>
+            <div className="mt-4 gap-2">
+              <i className="devicon-python-plain colored"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='mt-12 w-fit flex items-center justify-start max-md:justify-center'>
+        <div className="md:flex">
+          <img src="CryptoVerse.jpeg" className="max-md:w-[100vh] p-2 object-cover rounded-lg h-2/3 w-2/5 ..." />
+          <div className='flex-col ml-8'>
+            <h1 className="max-md:text-3xl mt-3 md:text-4xl max-md:text-center">CryptoVerse</h1>
+            <p className="max-md:text-xl mt-3 md:text-xl">A website where you can get information about different cryptocurrencies. React.js is used for frontend and Chart js is used for displaying the data in graphical form and axios is used for fetching data from API Context API is used for state management.</p>
+            <div className="mt-4 flex gap-4">
+              <Link to='https://github.com/Yashh56/CryptoVerse'>
+                <Button gap={2}>Source Code <i className="devicon-github-original colored"></i></Button>
+              </Link>
+              <Link to='https://crypto-verse-wine.vercel.app/'>
+                <Button gap={2}>Demo</Button>
+              </Link>
+            </div>
+            <div className="mt-4 gap-2">
+              <i className="devicon-react-original colored"></i>
+              <i className="devicon-sass-original colored"></i>
+            </div>
           </div>
         </div>
       </div>
