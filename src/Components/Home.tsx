@@ -16,10 +16,13 @@ const Home = () => {
       <div className=' max-md:text-center animate-fade-up animate-once'>
         <div className='text-center justify-center items-center'>
           <h1 className="max-md:text-4xl md:text-8xl font-bold inline">Hi, my name is <p className='inline'>Yash</p> </h1>
-          <h2 className="max-md:text-3xl mt-3 md:text-7xl">I'm a {text}</h2>
+          <div className=''>
+          <h2 className="max-md:text-3xl mt-3 md:text-7xl fixed">I'm a {text}</h2>
+        
+          </div>
         </div>
-        <div className='flex items-center justify-center gap-2'>
-          <Link to='animatedSection' smooth={true} duration={500} offset={-50}>
+        <div className='flex items-center justify-center mt-40'>
+          <Link to='animatedSection' smooth={true}  duration={500} offset={-50}>
             <Button size={'lg'} className='Button'>Know More</Button>
           </Link>
         </div>

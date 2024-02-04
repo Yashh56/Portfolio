@@ -1,23 +1,24 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
+import { useEffect, useState } from 'react';
 const Skills = () => {
 
-    const ref = useRef<HTMLInputElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 100) { // Adjust this value based on when you want the animation to start
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
+
     useEffect(() => {
-        const el = ref.current;
-        gsap.fromTo(el, { scale: 0 }, {
-            scale: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: el,
-                toggleActions: 'play none'
-            }
-        })
-    }, [])
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <div ref={ref} className=' flex justify-center items-center' id='animatedSection1'>
+        <div className={` container flex justify-center items-center ${isVisible ? 'animate-fade-right animate-duration-[2000ms] animate-ease-out' : ''}`} id='animatedSection1'>
             <div className='md:h-[70vh] max-md:h-[40vh] md:w-fit max-md:w-fit'>
                 <div className='max-w-md max-md:w-fit'>
                     <h1 className='text-6xl/10 text-center m-10'>My Skills</h1>

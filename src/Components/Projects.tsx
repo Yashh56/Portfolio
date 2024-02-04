@@ -1,24 +1,28 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from "react-router-dom"
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
+import { useEffect, useState } from 'react';
 const Projects = () => {
-  const ref = useRef<HTMLInputElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 100) { // Adjust this value based on when you want the animation to start
+      setIsVisible(true);
+    } 
+    else {
+      setIsVisible(false);
+    }
+  };
+
   useEffect(() => {
-    const el = ref.current;
-    gsap.fromTo(el, { scale: 0 }, {
-      scale: 1,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: el,
-        toggleActions: 'play none'
-      }
-    })
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div ref={ref} className='w-fit mt-1'>
+    <div className={`container ${isVisible ? 'animate-fade-right animate-duration-[2000ms] animate-ease-out' : " "} `}>
+
+    <div className={`container w-fit mt-1 ${isVisible ? 'slide-in' : ''}`}>
       <div className='h-[20vh] flex justify-center max-md:mt-12 items-center max-md:text-4xl md:text-6xl'>
         <h1>PROJECTS</h1>
       </div>
@@ -84,6 +88,8 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   )
 }
 
