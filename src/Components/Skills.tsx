@@ -18,55 +18,20 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className={` container flex justify-center items-center ${isVisible ? 'animate-fade-right animate-duration-[2000ms] animate-ease-out' : ''}`} id='animatedSection1'>
-            <div className='md:h-[70vh] max-md:h-[40vh] md:w-fit max-md:w-fit'>
-                <div className='max-w-md max-md:w-fit'>
-                    <h1 className='text-6xl/10 text-center m-10'>My Skills</h1>
-                    <div className=' flex mt-8 flex-wrap text-2xl md:gap-10 max-md:gap-3 justify-center items-center'>
-                        <div className='flex gap-2'>
-                            <i className="devicon-javascript-plain colored"></i>
-                            <p>Javascript</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-typescript-plain colored"></i>
-                            <p>Typescript</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-react-original colored"></i>
-                            <p>React</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-tailwindcss-plain colored"></i>
-                            <p>Tailwind</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-redux-original colored"></i>
-                            <p>Redux</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-nodejs-plain colored"></i>
-                            <p>Node</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-express-original colored"></i>
-                            <p>Express</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-mongodb-plain colored"></i>
-                            <p>MongoDB</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-git-plain colored"></i>
-                            <p>Git</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-python-plain colored"></i>
-                            <p>Python</p>
-                        </div>
-                        <div className='flex gap-2'>
-                            <i className="devicon-java-plain colored"></i>
-                            <p>Java</p>
-                        </div>
+        <div className='flex md:w-full h-[20vh] max-md:mt-8 max-md:w-fit justify-center items-center text-center'>
+            <div className={`container ${isVisible ? 'animate-fade-right animate-duration-[1000ms] animate-ease-out' : ' '}`}>
+                <h1 className='text-5xl/10 text-center m-4'>My Skills</h1>
+                <div className='flex justify-center items-center mt-4'>
+                    <div className='flex flex-wrap gap-4 text-4xl justify-center items-center'>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" className='h-12 w-12' />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" className='h-12 w-12' />
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import { Link } from 'react-scroll'
 import { Link as Link1 } from 'react-router-dom'
 import { IoIosArrowUp } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { SiLeetcode, SiGithub } from "react-icons/si";
+import { SiLeetcode, SiGithub, SiGeeksforgeeks } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -31,6 +31,9 @@ const Footer = () => {
           </Link1>
           <Link1 target='_blank' to='https://leetcode.com/yashsaini18166/'>
             <p className=' dark:text-white'><SiLeetcode size={25} /></p>
+          </Link1>
+          <Link1 target='_blank' to='https://auth.geeksforgeeks.org/user/yashh596'>
+            <p className='text-green-500 dark:text-green-500'><SiGeeksforgeeks size={25} /></p>
           </Link1>
         </div>
         <p className=" justify-center text-center mt-10">© YashKumar Saini 2024</p>
