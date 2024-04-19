@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 export default function AboutMe() {
   return (
-    <div className='flex justify-center items-center h-screen w-full'>
+    <div className='flex justify-center bg-[#171717] items-center h-screen w-full'>
       <div>
         <h1 className='text-center m-4 text-3xl'>ABOUT ME</h1>
-        <div>
+        <div className='text-xl'>
         <p>
           ▫️ Hii Everyone, My name is Yash Saini
           </p>
@@ -30,10 +30,10 @@ export default function AboutMe() {
           ▫️ My Rating on LeetCode: 1586
           </p>
         </div>
-        <h1 className='text-3xl mt-2 m-4'>
+        <h1 className='md:mt-2 md:text-3xl max-md:text-2xl md:m-4'>
           Tech Stack I am familiar with:
         </h1>
-        <div className='flex flex-wrap gap-2 ml-4'>
+        <div className='flex flex-wrap max-md:text-sm gap-2 ml-4'>
           <i className="devicon-javascript-plain colored"></i>
           <i className="devicon-typescript-plain colored"></i>
           <i className="devicon-react-original-wordmark colored"></i>
@@ -48,7 +48,7 @@ export default function AboutMe() {
           <i className="devicon-docker-plain colored"></i>
           </div>
 
-        <h1 className='text-3xl mt-2 m-4'>
+        <h1 className='md:text-3xl max-md:text-2xl md:mt-2 md:m-4'>
           Platforms I use for Competitive Programming:
         </h1>
         <div className='flex'>
