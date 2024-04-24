@@ -1,7 +1,9 @@
-import { Image } from '@chakra-ui/react'
+import { Button, Image } from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const About = () => { const [isVisible, setIsVisible] = useState(false);
+const About = () => {
+    const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
         if (window.scrollY > 70) {
@@ -20,7 +22,7 @@ const About = () => { const [isVisible, setIsVisible] = useState(false);
     return (
         <div className='flex  bg-[#171717] flex-col justify-center max-md:p-4 items-center'>
             <h1 id='animatedSection' className='text-center text-3xl m-4'>About Me</h1>
-            <div className={`flex items-center justify-center ${isVisible ? 'animate-fade-right animate-duration-[1000ms] animate-ease-out':' '}`}>
+            <div className={`flex items-center justify-center ${isVisible ? 'animate-fade-right animate-duration-[1000ms] animate-ease-out' : ' '}`}>
                 <div className='flex-col flex justify-center items-center text-left'>
                     <Image
                         className='flex items-center justify-center md:w-96 md:h-96 w-72 h-72'
@@ -37,6 +39,11 @@ const About = () => { const [isVisible, setIsVisible] = useState(false);
                         <p>✨ I also Contributed in <mark> Hacktoberfest 2023</mark>.</p>
                         <p>🌻 I am actively searching for a full-time position or internship that aligns with my skills and career goals,</p>
                         <p> where I can contribute effectively and continue to develop my expertise. </p>
+                    </div>
+                    <div className='flex mt-2 float-left'>
+                        <Link to={'https://drive.google.com/file/d/1Vv_-xN48d-rTqdfAm5NEUeCXkGBn3z4p/view'} target='_blank' >
+                            <Button size={'lg'} className='Button'>Resume</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

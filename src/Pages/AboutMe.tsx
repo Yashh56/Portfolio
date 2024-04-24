@@ -23,9 +23,9 @@ export default function AboutMe() {
           <p>
           ▫️ I am also looking for internships and opportunities to work with amazing people.
           </p>
-          <p>
+          {/* <p>
           ▫️ My Rating on Codeforces: 1156
-          </p>
+          </p> */}
           <p>
           ▫️ My Rating on LeetCode: 1586
           </p>
@@ -55,9 +55,9 @@ export default function AboutMe() {
           <Link to='https://leetcode.com/yashsaini18166/' target='_blank'>
             <Image src="LeetCode.svg" alt="LeetCode" width='20' height='10' />
           </Link>
-          <Link to='https://codeforces.com/profile/Yashh56' target='_blank'>
+          {/* <Link to='https://codeforces.com/profile/Yashh56' target='_blank'>
             <Image src="codeforces.svg" alt="Codeforces" width='20' height='10' />
-          </Link>
+          </Link> */}
           </div>
       </div>
     </div>
