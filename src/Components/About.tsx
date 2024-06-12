@@ -32,10 +32,10 @@ const About = () => {
                     />
                     <div className='flex-col grid grid-row-3 gap-2 md:w-[80%] md:text-2xl'>
                         <p>🙋‍♂️ I am first-year undergraduate student pursuing a Bachelor's in Computer Science.</p>
-                        <p> ⚒️I'm passionate about exploring various facets of the field, including <mark>web development</mark> ,<mark>competitive programming</mark>, and other related areas</p>
-                        {/* <p>.</p> */}
-                        <p>🚀 Currently I am learning different Data Structure and Algorithms Concepts and working on projects related to MERN Stack.</p>
-                        <p>✨ I also Contributed in <mark> Hacktoberfest 2023</mark>.</p>
+                        <p> ⚒️I'm passionate about exploring various facets of the field, including <mark>web development</mark> ,<mark>competitive programming</mark>, and other related areas.</p>
+                        <p>🚀 Currently I am exploring Data Structure and Algorithms Concepts and working on Full Stack projects.</p>
+
+                        <p>✨ I also Contributed in various <mark> Open Source</mark> Projects.</p>
                         <p>🐋 I love problem solving and doing competitive programming.</p>
                         <p> 🍁 My hobbies are watching anime,cricket, andreading books .</p>
                     </div>

@@ -17,7 +17,7 @@ const Home = () => {
       <div id='home' className="h-screen bg-[#171717] w-full flex items-center text-center max-md:justify-center md:justify-start md:p-40">
         <div className=' max-md:text-center animate-fade-up animate-once'>
           <div className='text-center justify-center items-center'>
-            <h1 className="max-md:text-4xl md:text-8xl font-bold inline">Hi, my name is <p className='inline'>Yash</p> </h1>
+            <h1 className="max-md:text-4xl md:text-8xl font-bold inline">Hey There, I am <p className='inline'>Yash</p> </h1>
             <div className=''>
               <h2 className="max-md:text-3xl mt-3 md:text-7xl fixed">I'm a {text}</h2>
 

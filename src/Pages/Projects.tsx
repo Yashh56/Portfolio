@@ -123,29 +123,29 @@ const Projects = () => {
           <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
             <CardBody>
               <Image
-                src='Fun-Fact.jpeg'
-                alt='Green double couch with wooden legs'
+                src='WeatherCLI.gif'
                 borderRadius='lg'
               />
               <Stack mt='6' spacing='3'>
-                <Heading size='md'>Fun Fact Generator</Heading>
+                <Heading size='md'>Weather Forecast CLI</Heading>
                 <Text>
-                  A website where you can get random facts about different topics. Fun Fact Generator Web App in Python using the PyWebio module. Essentially, it will create interesting facts at random and display them on the web interface.</Text>
+                  A CLI tool to get the weather forecast of any city. The tool is made using GO and <Link to={'https://www.weatherapi.com/'} target='_blank' className=' underline'>WeatherAPI</Link> API is used to get the weather data.
+                </Text>
               </Stack>
             </CardBody>
             <CardFooter>
-              <i className="devicon-python-plain colored"></i>
+              <i className="devicon-go-original-wordmark colored"></i>
             </CardFooter>
             <Divider />
             <CardFooter>
               <ButtonGroup spacing='2'>
-                <Link to={'https://github.com/Yashh56/Fun-Fact-Generator'}>
-                <Button variant='outline' colorScheme='blue'>
-                  Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
-                </Button>
-              
+                <Link to={'https://github.com/Yashh56/Weather-CLI'} target='_blank'>
+                  <Button variant='outline' colorScheme='blue'>
+                    Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
+                  </Button>
+
                 </Link>
-                </ButtonGroup>
+              </ButtonGroup>
             </CardFooter>
           </Card>
           <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
@@ -173,13 +173,13 @@ const Projects = () => {
             <CardFooter>
               <ButtonGroup spacing='2'>
                 <Link to={'https://github.com/Yashh56/CryptoVerse'}>
-                <Button variant='outline' colorScheme='blue'>
-                  Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
-                </Button>
+                  <Button variant='outline' colorScheme='blue'>
+                    Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
+                  </Button>
                 </Link>
                 <Button variant='link' colorScheme='blue'>
                   <Link to={'https://crypto-verse-wine.vercel.app/'}>
-                  Demo
+                    Demo
                   </Link>
                 </Button>
               </ButtonGroup>
