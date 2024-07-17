@@ -31,16 +31,14 @@ const About = () => {
                         src='https://i.pinimg.com/564x/37/3f/f4/373ff491701d97ecfded705bc7d9955e.jpg'
                     />
                     <div className='flex-col grid grid-row-3 gap-2 md:w-[80%] md:text-2xl'>
-                        <p>🙋‍♂️ I am first-year undergraduate student pursuing a Bachelor's in Computer Science.</p>
+                        <p>🙋‍♂️ I am second-year undergraduate student pursuing a Bachelor's in Computer Science.</p>
                         <p> ⚒️I'm passionate about exploring various facets of the field, including <mark>web development</mark> ,<mark>competitive programming</mark>, and other related areas.</p>
                         <p>🚀 Currently I am exploring Data Structure and Algorithms Concepts and working on Full Stack projects.</p>
-
-                        <p>✨ I also Contributed in various <mark> Open Source</mark> Projects.</p>
                         <p>🐋 I love problem solving and doing competitive programming.</p>
                         <p> 🍁 My hobbies are watching anime,cricket, andreading books .</p>
                     </div>
                     <div className='flex max-md:mt-12 md:mt-12 float-left'>
-                        <Link to={'https://drive.google.com/file/d/1qtIjPWox_-LRbyTZ82PzqG6UlimrxeAI/view?usp=drive_link'} target='_blank' >
+                        <Link to={'https://drive.google.com/file/d/1h2SgEFxG_-IB-zSurat5McJfxw0Lc0HB/view?usp=sharing'} target='_blank' >
                             <Button size={'lg'} className='Button'>Resume</Button>
                         </Link>
                     </div>

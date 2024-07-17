@@ -185,6 +185,39 @@ const Projects = () => {
               </ButtonGroup>
             </CardFooter>
           </Card>
+          <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
+            <CardBody>
+              <Image
+                src='library.jpg'
+                borderRadius='lg'
+              />
+              <Stack mt='6' spacing='3'>
+                <Heading size='md'>Library Manager</Heading>
+                <Text>
+                  Library Manager is a comprehensive backend system for managing a library's inventory, user transactions, and authentication. Built with Node.js, TypeScript, Express, and Prisma, it provides a robust and scalable solution for handling library operations.
+                </Text>
+              </Stack>
+            </CardBody>
+            <CardFooter className='gap-2'>
+
+              <i className="devicon-typescript-plain colored"></i>
+
+              <i className="devicon-express-original colored"></i>
+
+
+            </CardFooter>
+            <Divider />
+            <CardFooter>
+              <ButtonGroup spacing='2'>
+                <Link to={'https://github.com/Yashh56/Library-Manager'}>
+                  <Button variant='outline' colorScheme='blue'>
+                    Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
+                  </Button>
+                </Link>
+                
+              </ButtonGroup>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </div>

@@ -9,10 +9,10 @@ const AboutMe = () => {
 
         <div className='flex-col mt-4 md:text-xl'>
           <p className='mt-3'>
-            ▫️ Hii Everyone, My name is Yash
+            ▫️ Hii Everyone, My name is Yashkumar Saini
           </p>
           <p className='mt-3'>
-            ▫️  I'm a first-year undergraduate student pursuing a Bachelor's in Computer Science.
+            ▫️  I'm a second-year undergraduate student pursuing a Bachelor's in Computer Science.
           </p>
           <p className='mt-3'>
             ▫️ I am a <Text as='mark'>Full Stack Developer</Text> and currently I am exploring new blockchain technologies and data structures and algorithms.
@@ -21,13 +21,10 @@ const AboutMe = () => {
             ▫️ I am also a <Text as='mark'>competitive programmer</Text> and I have participated in various competitions.
           </p>
           <p className='mt-3'>
-            ▫️ I also contributed to an open source project called  <Link className='hover:cursor-pointer hover:underline' to={'https://github.com/devicons/devicon'}>Devicons</Link>.
-          </p>
-          <p className='mt-3'>
             ▫️ I am  looking for internships and opportunities to work with amazing people.
           </p>
           <p className='mt-3'>
-            ▫️ Solved 150+ problems on <Link to='https://leetcode.com/yashsaini18166/' target='_blank' className='underline'>LeetCode</Link> and have a rating of 1700+.
+            ▫️ Solved 150+ problems on <Link to='https://leetcode.com/u/yashh56/' target='_blank' className='underline'>LeetCode</Link> and have a rating of 1700+.
           </p>
         </div>
         <div>
@@ -56,7 +53,7 @@ const AboutMe = () => {
         {/* <div className='mt-6'>
           <h1 className='text-2xl'>Platforms I use for Competitive Programming</h1>
           <div>
-            <Link to='https://leetcode.com/yashsaini18166/' target='_blank'>
+            <Link to='https://leetcode.com/u/yashh56/' target='_blank'>
               <Image src="LeetCode.svg" alt="LeetCode" width='20' height='10' />
             </Link>
           </div>
