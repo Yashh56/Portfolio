@@ -1,5 +1,16 @@
-import { Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+
+const skills = [
+  { name: 'JavaScript', color: 'bg-yellow-500 text-black' },
+  { name: 'TypeScript', color: 'bg-blue-500 text-black' },
+  { name: 'Python', color: 'bg-blue-800' },
+  { name: 'Golang', color: 'bg-teal-500' },
+  { name: 'C++', color: 'bg-blue-700' },
+  { name: 'MySQL', color: 'bg-orange-500' },
+  { name: 'MongoDB', color: 'bg-green-500' },
+  { name: 'Git', color: 'bg-gray-700' },
+  { name: 'Docker', color: 'bg-blue-600' },
+];
 
 const AboutMe = () => {
   return (
@@ -12,52 +23,39 @@ const AboutMe = () => {
             ▫️ Hii Everyone, My name is Yashkumar Saini
           </p>
           <p className='mt-3'>
-            ▫️  I'm a second-year undergraduate student pursuing a Bachelor's in Computer Science.
+            ▫️  I'm a second-year undergraduate student pursuing a Bachelor of Science in Computer Science.
           </p>
           <p className='mt-3'>
-            ▫️ I am a <Text as='mark'>Full Stack Developer</Text> and currently I am exploring new blockchain technologies and data structures and algorithms.
+            ▫️ I am a Full Stack Developer and currently I am exploring new blockchain technologies and data structures and algorithms.
           </p>
           <p className='mt-3'>
-            ▫️ I am also a <Text as='mark'>competitive programmer</Text> and I have participated in various competitions.
+            ▫️ I compete in programming contests and am working to get better at it.
           </p>
           <p className='mt-3'>
-            ▫️ I am  looking for internships and opportunities to work with amazing people.
+            ▫️ Solved 250+ problems on <Link to='https://leetcode.com/u/yashh56/' target='_blank' className='underline'>LeetCode</Link> and have a rating of 1700+.
           </p>
+
           <p className='mt-3'>
-            ▫️ Solved 150+ problems on <Link to='https://leetcode.com/u/yashh56/' target='_blank' className='underline'>LeetCode</Link> and have a rating of 1700+.
+            ▫️ My hobbies are watching anime, cricket, and reading books .
           </p>
+
         </div>
         <div>
           <h1 className='text-3xl mt-8'>
-            Programming Languages and Tools I am familiar with
+            Skills
           </h1>
-          <div className='flex max-md:justify-evenly flex-wrap gap-4'>
-
-
-            <i className="devicon-javascript-plain colored"></i>
-
-            <i className="devicon-typescript-plain colored"></i>
-
-            <i className="devicon-python-plain colored"></i>
-
-            <img width={40} height={20} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" />
-
-            <i className="devicon-git-plain colored"></i>
-
-            <i className="devicon-docker-plain colored"></i>
-
-
+          <div className='flex max-md:justify-evenly flex-wrap gap-4 mt-2'>
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className={`px-4 py-2 rounded-full text-white font-bold text-sm ${skill.color} transform transition-transform hover:scale-110`}
+              >
+                {skill.name}
+              </div>
+            ))}
 
           </div>
         </div>
-        {/* <div className='mt-6'>
-          <h1 className='text-2xl'>Platforms I use for Competitive Programming</h1>
-          <div>
-            <Link to='https://leetcode.com/u/yashh56/' target='_blank'>
-              <Image src="LeetCode.svg" alt="LeetCode" width='20' height='10' />
-            </Link>
-          </div>
-        </div> */}
       </div>
     </div>
   )

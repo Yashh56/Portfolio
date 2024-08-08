@@ -1,9 +1,32 @@
+import { Link } from 'react-router-dom'
 import { useTypewriter } from 'react-simple-typewriter'
-import { Link } from 'react-scroll'
-import { Button } from '@chakra-ui/react'
-import About from '../Components/About'
-import Footer from '../Components/Footer'
 
+
+const CenteredText = ({ text }: any) => {
+  return (
+    <div className="flex justify-center md:justify-start items-center h-screen">
+      <div className="text-center md:text-left md:ml-12 lg:ml-16 xl:ml-20">
+        <p className="mb-4 md:text-6xl text-4xl">Hey there, I am Yash</p>
+        <p className='mb-4 md:text-6xl text-4xl'>I'm a {text}</p>
+        <div className="mt-4 flex flex-col md:flex-row md:items-start md:ml-72 space-y-4 md:space-y-0 md:space-x-4">
+          <Link to="https://github.com/Yashh56" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            GitHub
+          </Link>
+          <Link to="https://www.linkedin.com/in/yash596/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            LinkedIn
+          </Link>
+          <Link to="https://twitter.com/Yashh596" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            X
+          </Link>
+          <Link to={'https://drive.google.com/file/d/1h2SgEFxG_-IB-zSurat5McJfxw0Lc0HB/view?usp=sharing'} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+            Resume
+          </Link>
+        </div>
+      </div>
+    </div>
+
+  )
+}
 const Home = () => {
   const [text] = useTypewriter({
     words: ['Web Developer', 'Open Source Contributor', 'Tech Enthusiast',],
@@ -13,26 +36,10 @@ const Home = () => {
 
   })
   return (
-    <>
-      <div id='home' className="h-screen bg-[#171717] w-full flex items-center text-center max-md:justify-center md:justify-start md:p-40">
-        <div className=' max-md:text-center animate-fade-up animate-once'>
-          <div className='text-center justify-center items-center'>
-            <h1 className="max-md:text-4xl md:text-8xl font-bold inline">Hey There, I am <p className='inline'>Yash</p> </h1>
-            <div className=''>
-              <h2 className="max-md:text-3xl mt-3 md:text-7xl fixed">I'm a {text}</h2>
+    <div className="flex flex-col justify-between min-h-screen">
+      <CenteredText text={text} />
+    </div>
 
-            </div>
-          </div>
-          <div className='flex items-center justify-center mt-40'>
-            <Link to='animatedSection' smooth={true} duration={500} offset={-50}>
-              <Button size={'lg'} className='Button'>Know More</Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <About />
-      <Footer />
-    </>
   )
 }
 
