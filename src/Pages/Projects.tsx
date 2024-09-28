@@ -9,7 +9,6 @@ const Projects = () => {
       <h1 className='text-center text-3xl mt-12'>PROJECTS</h1>
       <div className='flex justify-evenly items-start mt-12 w-full'>
         <div className='flex justify-evenly items-center flex-wrap gap-4'>
-
           <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
             <CardBody>
               <Image
@@ -44,44 +43,6 @@ const Projects = () => {
                     <p className="text-black text-xl ml-2"><FaGithub /></p>
                   </Button>
 
-                </Link>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-          <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
-            <CardBody>
-              <Image
-                src='ChatApp.png'
-                alt='Green double couch with wooden legs'
-                borderRadius='lg'
-              />
-              <Stack mt='6' spacing='3'>
-                <Heading size='md'>Chat App</Heading>
-                <Text>
-                  A Chat Application where user can create rooms and chat with other users in real time. React.js is used for frontend and for backend Node.js and Socket.io is used for realtime communication.
-                </Text>
-              </Stack>
-            </CardBody>
-            <CardFooter>
-
-              <i className="devicon-react-original colored"></i>
-
-              <i className="devicon-nodejs-plain colored"></i>
-
-              <i className="devicon-express-original colored"></i>
-
-              <i className="devicon-mongodb-plain colored"></i>
-
-              <i className="devicon-socketio-original colored"></i>
-
-            </CardFooter>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing='2'>
-                <Link to={'https://github.com/Yashh56/MERN-Chat-App'}>
-                  <Button variant='outline' colorScheme='blue'>
-                    Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
-                  </Button>
                 </Link>
               </ButtonGroup>
             </CardFooter>
@@ -188,33 +149,65 @@ const Projects = () => {
           <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
             <CardBody>
               <Image
-                src='library.jpg'
+                src='Gitvisualizer.png'
                 borderRadius='lg'
               />
               <Stack mt='6' spacing='3'>
-                <Heading size='md'>Library Manager</Heading>
+                <Heading size='md'>Git Visualizer CLI</Heading>
                 <Text>
-                  Library Manager is a comprehensive backend system for managing a library's inventory, user transactions, and authentication. Built with Node.js, TypeScript, Express, and Prisma, it provides a robust and scalable solution for handling library operations.
+                  A CLI tool to visualize the git repository. The tool is made using GO and inspired from <Link to={'https://flaviocopes.com/go-git-contributions/'} target='_blank' className=' underline'> Flavio Copes' Git Contributions</Link>.
+                  User can check the contribution of any user in any repository using thier email id.
                 </Text>
+                <Text className='h-12'></Text>
               </Stack>
             </CardBody>
-            <CardFooter className='gap-2'>
-
-              <i className="devicon-typescript-plain colored"></i>
-
-              <i className="devicon-express-original colored"></i>
-
-
+            <CardFooter>
+              <i className="devicon-go-original-wordmark colored"></i>
             </CardFooter>
             <Divider />
             <CardFooter>
               <ButtonGroup spacing='2'>
-                <Link to={'https://github.com/Yashh56/Library-Manager'}>
+                <Link to={'https://github.com/Yashh56/GitVisualizer'} target='_blank'>
+                  <Button variant='outline' colorScheme='blue'>
+                    Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
+                  </Button>
+
+                </Link>
+              </ButtonGroup>
+            </CardFooter>
+          </Card>
+          <Card maxW='sm' className='hover:scale-105 transition-all duration-500 cursor-pointer'>
+            <CardBody>
+              <Image
+                src='Zeddit.png'
+                borderRadius='lg'
+              />
+              <Stack mt='6' spacing='3'>
+                <Heading size='md'>Zeddit</Heading>
+                <Text>
+                  Zeddit is a web Application which is inspired by Reddit. It is a platform where users can post, comment, and likes posts and comments. It is made using Next.js, Prisma, and Postgres. For authentication, NextAuth.js is used and
+                  for designing ShadCn UI is used and it is still under development.
+                </Text>
+              </Stack>
+            </CardBody>
+            <CardFooter className='gap-2'>
+              <i className="devicon-typescript-plain colored"></i>
+              <i className="devicon-nextjs-plain colored"></i>
+              <i className="devicon-postgresql-plain colored"></i>
+
+              <i className='text-black'><SiPrisma /></i>
+            </CardFooter>
+            <Divider />
+            <CardFooter>
+              <ButtonGroup spacing='2'>
+                <Link target='_blank' to={'https://github.com/Yashh56/Zeddit'}>
                   <Button variant='outline' colorScheme='blue'>
                     Source Code <p className="text-black text-xl ml-2"><FaGithub /></p>
                   </Button>
                 </Link>
-                
+                <Button variant='link' colorScheme='blue'>
+                  <Link to={'https://zeddit-alpha.vercel.app/'} target='_blank'>Demo</Link>
+                </Button>
               </ButtonGroup>
             </CardFooter>
           </Card>
