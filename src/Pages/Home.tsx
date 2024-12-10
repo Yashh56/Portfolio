@@ -18,7 +18,7 @@ const CenteredText = ({ text }: any) => {
           <Link to="https://twitter.com/Yashh596" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
             X
           </Link>
-          <Link to={'https://drive.google.com/file/d/1h2SgEFxG_-IB-zSurat5McJfxw0Lc0HB/view?usp=sharing'} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+          <Link to={'https://drive.google.com/file/d/1peOArbShFCX7rNnvR2JDEdqJczJ2jQju/view?usp=sharing'} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
             Resume
           </Link>
         </div>
