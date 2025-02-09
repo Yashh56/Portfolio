@@ -1,8 +1,13 @@
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading, Image, Stack, Text } from '@chakra-ui/react'
-import { FaGithub } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { motion } from 'framer-motion'
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  github: string;
+  url?: string;
+}
 
 const projects = [
   {
@@ -71,35 +76,36 @@ const projects = [
   },
 ]
 
-const ProjectCard = ({ project }) => {
+
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="bg-white/10 backdrop-blur-lg rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
       <div className="relative group">
-        <img 
-          src={project.image} 
+        <img
+          src={project.image}
           alt={project.title}
           className="w-full h-48 object-cover transition-all duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#030014]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
         <p className="text-gray-300 text-sm mb-4">{project.description}</p>
-        
+
         <div className="flex flex-wrap gap-3 mb-4">
           {project.technologies.map((tech, i) => (
-            <img 
-              key={i} 
-              src={tech} 
+            <img
+              key={i}
+              src={tech}
               alt="technology"
-              className="h-6 w-6 transition-transform hover:scale-110" 
+              className="h-6 w-6 transition-transform hover:scale-110"
             />
           ))}
         </div>
-        
+
         <div className="flex gap-3 mt-4 pt-4 border-t border-white/10">
-          <a 
+          <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -111,7 +117,7 @@ const ProjectCard = ({ project }) => {
             Source
           </a>
           {project.url && (
-            <a 
+            <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -136,9 +142,9 @@ const Projects = () => {
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           A collection of my recent work in web development, system design, and software engineering
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>

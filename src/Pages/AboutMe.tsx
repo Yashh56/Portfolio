@@ -1,5 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+
+interface WorkExperience {
+  role: string;
+  company: string;
+  duration: string;
+  description: string;
+  link?: string;
+}
 
 const skills = [
   { name: 'JavaScript', color: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/50' },
@@ -10,8 +17,8 @@ const skills = [
   { name: 'MySQL', color: 'bg-orange-500/20 text-orange-300 border-orange-500/50' },
   { name: 'MongoDB', color: 'bg-green-500/20 text-green-300 border-green-500/50' },
   { name: 'Git', color: 'bg-gray-700/20 text-gray-300 border-gray-500/50' },
-  {name:'Github Actions',color:'bg-gray-800/20 text-gray-300 border-gray-800/50'},
-  {name:'PostgreSQL',color:'bg-blue-500/20 text-blue-300 border-blue-500/50'},
+  { name: 'Github Actions', color: 'bg-gray-800/20 text-gray-300 border-gray-800/50' },
+  { name: 'PostgreSQL', color: 'bg-blue-500/20 text-blue-300 border-blue-500/50' },
   { name: 'Docker', color: 'bg-blue-600/20 text-blue-300 border-blue-600/50' },
   { name: 'Redis', color: 'bg-red-600/20 text-red-300 border-red-600/50' },
 ];
@@ -32,13 +39,6 @@ const workExperience = [
   },
 ];
 
-interface WorkExperience {
-  role: string;
-  company: string;
-  duration: string;
-  description: string;
-  link?: string;
-}
 
 const ExperienceCard = ({ work }: { work: WorkExperience }) => (
   <div className="p-6 bg-white/5 backdrop-blur-lg rounded-xl border border-white/10 hover:border-blue-500/30 transition-all duration-300">
