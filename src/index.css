@@ -1,37 +1,51 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap"); */
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #030014;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --accent-blue: #3b82f6;
+}
+
 * {
-  /* padding: 2px; */
   box-sizing: border-box;
   margin: 0;
-  /* color:black; */
-  /* font-family: 'Poppins'; */
-  font-family: "Raleway", serif !important;
+  font-family: "Raleway", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-i {
-  color: #fff;
-  font-size: 2.0rem;
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
 }
-#i { font-size: 5rem;
+
+/* Icon Styles */
+i {
+  color: var(--text-primary);
+  font-size: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+i:hover {
+  transform: translateY(-2px);
+}
+
+#i {
+  font-size: 5rem;
   margin: 0.5rem;
   gap: 1rem;
 }
 
-/* AnimatedSection.css */
+/* Animated Section */
 .section {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section.animate {
@@ -39,17 +53,89 @@ i {
   transform: translateY(0);
 }
 
+/* Custom Scrollbar */
 body::-webkit-scrollbar {
-  width: 10px; /* width of the entire scrollbar */
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  background: black; /* color of the tracking area */
+  background: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 1px solid white; /* creates padding around scroll thumb */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s ease;
 }
 
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Enhanced Text Selection */
+::selection {
+  background: var(--accent-blue);
+  color: white;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced Link Styles */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-blue);
+}
+
+/* Glass Effect Classes */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation Classes */
+.hover-translate {
+  transition: transform 0.3s ease;
+}
+
+.hover-translate:hover {
+  transform: translateY(-4px);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+}
+
+/* Button Styles */
+.custom-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--accent-blue);
+}
