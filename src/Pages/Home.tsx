@@ -35,9 +35,9 @@ const CenteredText = ({ text }:{text:string}) => {
           <SocialLink to="https://twitter.com/Yashh596">
             X
           </SocialLink>
-          <SocialLink to="https://drive.google.com/file/d/1peOArbShFCX7rNnvR2JDEdqJczJ2jQju/view?usp=sharing">
+          {/* <SocialLink to="https://drive.google.com/file/d/1peOArbShFCX7rNnvR2JDEdqJczJ2jQju/view?usp=sharing">
             Resume
-          </SocialLink>
+          </SocialLink> */}
         </div>
       </div>
     </div>
