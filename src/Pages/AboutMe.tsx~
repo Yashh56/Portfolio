@@ -74,7 +74,7 @@ const AboutMe = () => {
           </li>
           <li className="flex items-start">
             <span className="text-blue-400 mr-2">•</span>
-            I'm a third-year undergraduate student pursuing a Bachelor of Science in Computer Science.
+            I'm a second-year undergraduate student pursuing a Bachelor of Science in Computer Science.
           </li>
           <li className="flex items-start">
             <span className="text-blue-400 mr-2">•</span>
